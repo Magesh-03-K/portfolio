@@ -1,6 +1,14 @@
+import { motion } from "framer-motion";
+
 export default function Hero() {
   return (
-    <section className="hero" id="home">
+    <motion.section
+      className="hero"
+      id="home"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
         
       <h1>Hi, I'm Magesh 👋</h1>
 
@@ -10,6 +18,6 @@ export default function Hero() {
         I build AI-powered web applications using
         React, Node.js, Express, and APIs.
       </p>
-    </section>
+    </motion.section>
   );
 }
