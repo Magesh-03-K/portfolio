@@ -4,6 +4,7 @@ import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 import Contact from "./sections/Contact";
 import Navbar from "./components/Navbar";
+import Footer from "./sections/Footer";
 import { motion, useScroll } from "framer-motion";
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
       <Projects />
       <Skills />
       <Contact />
+      
+      <Footer />
+      
     </div>
   );
 }
