@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function Skills() {
   const skills = [
     "React",
@@ -13,7 +15,18 @@ export default function Skills() {
   ];
 
   return (
-    <section className="skills" id="skills">
+    <motion.section
+      className="skills"
+      id="skills"
+
+      initial={{ opacity: 0, y: 50 }}
+
+      whileInView={{ opacity: 1, y: 0 }}
+
+      transition={{ duration: 0.7 }}
+
+      viewport={{ once: true }}
+    >
       <h2>Skills</h2>
 
       <div className="skills-grid">
@@ -23,6 +36,6 @@ export default function Skills() {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

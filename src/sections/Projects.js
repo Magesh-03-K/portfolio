@@ -1,6 +1,19 @@
+import { motion } from "framer-motion";
+
 export default function Projects() {
   return (
-    <section className="projects" id="projects">
+    <motion.section
+      className="projects"
+      id="projects"
+
+      initial={{ opacity: 0, y: 50 }}
+
+      whileInView={{ opacity: 1, y: 0 }}
+
+      transition={{ duration: 0.7 }}
+
+      viewport={{ once: true }}
+    >
       <h2>Projects</h2>
 
       <div className="project-card">
@@ -29,6 +42,6 @@ export default function Projects() {
           </a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

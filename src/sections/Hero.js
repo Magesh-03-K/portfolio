@@ -11,7 +11,10 @@ export default function Hero() {
       transition={{ duration: 0.8 }}
 
       style={{
-        backgroundImage: `url(${bg})`,
+        backgroundImage: `linear-gradient(
+          rgba(15, 23, 42, 0.4),
+          rgba(15, 23, 42, 0.22)
+        ), url(${bg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         

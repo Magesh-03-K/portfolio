@@ -1,6 +1,20 @@
+import { motion } from "framer-motion";
+
+
 export default function Contact() {
   return (
-    <section className="contact" id="contact">
+    <motion.section
+      className="contact"
+      id="contact"
+
+      initial={{ opacity: 0, y: 50 }}
+
+      whileInView={{ opacity: 1, y: 0 }}
+
+      transition={{ duration: 0.7 }}
+
+      viewport={{ once: true }}
+    >
       <h2>Contact</h2>
 
       <p>
@@ -37,6 +51,6 @@ export default function Contact() {
           Resume
         </a>
       </div>
-    </section>
+    </motion.section>
   );
 }
