@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import projectImg from "../assets/project.png";
 
 export default function Projects() {
   return (
@@ -17,6 +18,11 @@ export default function Projects() {
       <h2>Projects</h2>
 
       <div className="project-card">
+        <img
+          src={projectImg}
+          alt="Smart Learning Assistant"
+          className="project-image"
+        />
         <h3>Smart Learning Assistant 🚀</h3>
 
         <p>
@@ -30,7 +36,7 @@ export default function Projects() {
             target="_blank"
             rel="noreferrer"
           >
-            Live Demo
+            🚀 Live Demo
           </a>
 
           <a
@@ -38,7 +44,7 @@ export default function Projects() {
             target="_blank"
             rel="noreferrer"
           >
-            GitHub
+            💻 GitHub
           </a>
         </div>
       </div>
